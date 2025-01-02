@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusUniPay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Layout */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        /* Left Column - Fees Description */
+        .left-column {
+            flex: 1;
+            min-width: 280px;
+            background: rgba(244, 244, 244, 1);
+
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .fee-box h2 {
+            font-size: 1.5rem;
+            color: #2c5f9e;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .fee-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        /* Right Column - Illustration */
+        .right-column {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+
+            /* Stack columns vertically on tablets */
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fee-box h2 {
+                font-size: 1.8rem;
+            }
+
+            .fee-box p {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            /* Adjust font sizes for small screens */
+            .fee-box h2 {
+                font-size: 1.5rem;
+            }
+
+            .fee-box p {
+                font-size: 1rem;
+            }
+
+            .right-column img {
+                max-width: 80%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 544px) {
+
+            /* Stack columns vertically for very small screens */
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .fee-box h2 {
+                font-size: 1.2rem;
+            }
+
+            .fee-box p {
+                font-size: 1rem;
+            }
+
+            .right-column img {
+                max-width: 80%;
+                height: auto;
+            }
+        }
+
+
+        /* Features Section */
+        .features-section {
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            /* Placeholder background, change to map */
+            background-size: cover;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .features-section h2 {
+            font-size: 2rem;
+            color: #2c5f9e;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .features-list {
+            width: 70%;
+            margin-left: 5%;
+
+        }
+
+        .feature-item {
+            width: 600px;
+            display: flex;
+            /* align-items: center; */
+            gap: 5px;
+            margin: 20px;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            color: #2c5f9e;
+        }
+
+        .feature-text {
+            text-align: left;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c5f9e;
+        }
+
+        .feature-description {
+
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            margin-right: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact-section h3 {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c5f9e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .features-list {
+                gap: 30px;
+            }
+
+            .feature-item {
+                width: 45%;
+                margin: 10px;
+            }
+
+
+        }
+
+        @media (max-width: 768px) {
+            .features-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .feature-item {
+                width: 85%;
+                padding: 20px;
+                margin: 10px;
+            }
+
+        }
+
+        @media (max-width: 400px) {
+            .features-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .feature-item {
+                width: 75%;
+                padding: 20px;
+                margin: 10px;
+            }
+
+        }
+        .upper-banner-section{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            /* gap: 10px; */
+        }
+        .right-section-banner img{
+            position: relative;
+            width: 110%;
+            
+        }
+        .right-section-banner p{
+            position: absolute;
+            top: 130px;
+            left: 30px;
+            color: aliceblue;
+            font-size: 30px;
+           padding: 30px;
+        }
+        .left-section-banner img{
+            width: 110%;
+        }
+       
+        @media screen and (max-width: 1020px) {
+            .right-section-banner p{
+            position: absolute;
+            top: 120px;
+            left: 10px;
+            color: aliceblue;
+            font-size: 20px;
+           padding: 20px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+            .right-section-banner p{
+            position: absolute;
+            top: 115px;
+            left: 10px;
+            color: aliceblue;
+            font-size: 20px;
+           padding: 20px;
+        }
+        }
+        @media screen and (max-width: 520px) {
+            .right-section-banner p{
+            position: absolute;
+            top: 110px;
+            left: 10px;
+            color: aliceblue;
+            font-size: 15px;
+           padding: 15px;
+        }
+        }
+        @media screen and (max-width: 400px) {
+            .right-section-banner p{
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            color: aliceblue;
+            font-size: 10px;
+           padding: 10px;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html"> <div class="logo">
+                <img src="./assets/logos/azesvent logo.png" alt="Azesavant Logo">
+            </div></a>
+            <!-- Hamburger menu (visible on small screens) -->
+            <div class="hamburger" id="hamburger">
+
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <button class="close-btn" id="close-btn" onclick="closeNav()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#"> Products</a>
+                    <ul class="dropdown">
+                        <li><a href="./Solution1.html">Campus90</a></li>
+                        <li><a href="./fee.html">CampusUniPay</a></li>
+                        <li><a href="./logistic.html">Transend Logistic</a></li>
+                        <li><a href="./ecommerce.html">Shopincan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Services</a>
+                    <ul class="dropdown">
+                        <li><a href="./website-development.html">Website Development</a></li>
+                        <li><a href="./Software-development-services.html">Software Development</a></li>
+                        <li><a href="./Cloud-services.html">Cloud-automation-solutions</a></li>
+                        <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Pricing2.html">Pricing</a></li>
+
+                <li><a href="./Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="upper-banner-section">
+                <div class="right-section-banner">
+                    <img src="./assets/images/feepay/Rectangle 85.png">
+                    <p>Powerful CampusUniPay</p>
+                </div>
+                <div class="left-section-banner">
+                    <img src="./assets/images/feepay/Rectangle 89.png">
+                </div>
+               
+            </div>
+        </section>
+        <section>
+            <h1 style="color: #2c5f9e;">Cloud Based Solutions for Powerfull CampusUniPay (Offline/online)</h1>
+            <!-- Content Section -->
+            <div class="content">
+                <!-- Left Column (Text Sections) -->
+                <div class="left-column">
+                    <div class="fee-box">
+                        <h2>CampusUniPay</h2>
+                        <p>CampusUniPay is a smart, all-in-one fee management and payment solution designed for educational institutions to streamline financial transactions and enhance convenience for students and parents.</p>
+                    </div>
+
+                    <div class="fee-box">
+                        <h2>Exam Fee</h2>
+                        <p>A powerful Student fees management system, supporting both offline and online payments,
+                            offers a
+                            seamless and secure financial transaction experience for educational institutions. It
+                            streamlines fee collection, tracking, and reporting, allowing for multiple payment methods
+                            and
+                            easy reconciliation. This versatile system enhances efficiency, reduces administrative
+                            burdens,
+                            and provides convenience to students and parents.</p>
+                    </div>
+
+                    <div class="fee-box">
+                        <h2>Admission Fee</h2>
+                        <p>A powerful Student fees management system, supporting both offline and online payments,
+                            offers a
+                            seamless and secure financial transaction experience for educational institutions. It
+                            streamlines fee collection, tracking, and reporting, allowing for multiple payment methods
+                            and
+                            easy reconciliation. This versatile system enhances efficiency, reduces administrative
+                            burdens,
+                            and provides convenience to students and parents.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column (Image/Illustration) -->
+                <div class="right-column">
+                    <img src="./assets/images/feepay/Payment Information-cuate 1.png"
+                        alt="Fees Management Illustration">
+                </div>
+            </div>
+        </section>
+        <section class="features-section">
+
+            <div class="features-list">
+                <h2>Key Features</h2>
+                <div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Unified Payment Gateway</p>
+                        <p class="feature-description">Supports multiple payment methods, including cards, UPI, net banking, and digital wallets.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Customizable Fee Structures</p>
+                        <p class="feature-description">Handles diverse fee categories like tuition, transportation, and hostel fees.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Automated Billing & Receipts</p>
+                        <p class="feature-description">Generates digital invoices and provides instant payment receipts..</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Real-Time Payment Tracking</p>
+                        <p class="feature-description">Offers a centralized dashboard for institutions to monitor payments and dues..</p>
+                    </div>
+                </div>
+				<div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Reminders & Notifications</p>
+                        <p class="feature-description">Sends automated SMS or email reminders for upcoming due dates.</p>
+                    </div>
+                </div>
+					<div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Secure Transactions</p>
+                        <p class="feature-description">Ensures robust security with encryption and fraud prevention measures.</p>
+                    </div>
+                </div>
+				<div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Integrated Reporting</p>
+                        <p class="feature-description">Provides detailed financial reports for audits and decision-making.</p>
+                    </div>
+                </div>
+					<div class="feature-item">
+                    <span class="feature-icon">✔️</span>
+                    <div class="feature-text">
+                        <p class="feature-title">Student & Parent Portal</p>
+                        <p class="feature-description">Allows users to view dues, make payments, and access transaction history.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <i class="fas fa-phone-alt phone-icon"></i> <!-- Added phone icon here -->
+                <h3>REACH OUT NOW!</h3>
+                <p class="contact-number">+91 9445122271</p>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="container-address">
+                <div class="address-card">
+                    <h2><b>Chennai Address</b></h2>
+                    <p>51, 4th floor,Ratha Tek Meadows Rd, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119</p>
+                    <p>support@azesavant.com Tel:<br> (+91) 9445122271</p>
+                </div>
+                <div class="address-card">
+                    <h2><b>International Offices - Canada</b></h2>
+                    <p>78,French Street,Vancouver, BC-Canada</p>
+                    <p>support.canada@azesavant.com</p>
+                </div>
+                <div class="address-card">
+                    <h2><b>Chennai - India</b></h2>
+                    <p>Azesavant Software Solutions Pvt Ltd, 4/608, V.O.C. Street,Perungudi,OMR, Chennai, Tamil Nadu ,
+                        India, 600041</p>
+                    <p>support@azesavant.com Tel: <br>(+91) 9445122271</p>
+                </div>
+            </div>
+        </section> -->
+
+
+
+
+    </main>
+    <footer>
+
+        <!-- <br> -->
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">About Us</h2>
+                <p>
+                    Azesavant Software Solutions, nestled in the vibrant tech hub of Chennai, India, has emerged as a
+                    prominent player in the domain of educational,Payment solutions,Transport and logistic AI technology
+                    cloud Solutions.
+                </p>
+
+
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Products</h2>
+                <ul>
+                    <li><a href="./Solution1.html">Campus90</a></li>
+                    <li><a href="./fee.html">CampusUniPay</a></li>
+                    <li><a href="./logistic.html">TranSend Logistic</a></li>
+                    <li><a href="./ecommerce.html">Shopincan</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Services</h2>
+                <ul>
+                    <li><a href="./website-development.html">Website Development</a></li>
+                    <li><a href="./Software-development-services.html">Software Development</a></li>
+                    <li><a href="./Cloud-services.html"> Cloud Automation Solutions</a></li>
+                    <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Contact</h2>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044492</p>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044493</p>
+                <p><i class="fas fa-envelope"></i>   info@azesavant.com</p>
+                <p> <i class="fas fa-envelope"></i>    support@azesavant.com</p>
+                <p><i class="fas fa-clock"></i> <b>    (8:00AM – 6:00PM)</b> </p>
+                <p> Monday to Saturday</p>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Partners</h2>
+                <img src="./assets/images/footer/image 1.png">
+                <img src="./assets/images/footer/image 2.png">
+                <img src="./assets/images/footer/image 3.png">
+
+            </div>
+            <!-- <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>2018-2024 Azesavant Software Solutions Pvt Ltd All Rights Reserved<a href="./Terms.html">Terms and
+                    Conditions</a> <a href="./Privacy.html">Privacy Policy</a>
+                <a href="./Refund.html">Refund Policy</a>
+                <a href="./Cookies.html">Cookies Policy</a>
+               
+                    <a  class="social-icons" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a   class="social-icons" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a   class="social-icons" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a> -->
+                
+            </p>
+
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+
+        // Load the header
+        fetch('Header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Header not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load the footer
+        fetch('Footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Footer not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>

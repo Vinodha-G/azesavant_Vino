@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+           <a href="./index.html"> <div class="logo">
+                <img src="./assets/logos/azesvent logo.png" alt="Azesavant Logo">
+            </div></a>
+            <!-- Hamburger menu (visible on small screens) -->
+            <div class="hamburger" id="hamburger">
+
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <button class="close-btn" id="close-btn" onclick="closeNav()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#"> Products</a>
+                    <ul class="dropdown">
+                        <li><a href="./Solution1.html">Campus90</a></li>
+                        <li><a href="./fee.html">CampusUniPay</a></li>
+                        <li><a href="./logistic.html">Transend Logistic</a></li>
+                        <li><a href="./ecommerce.html">Shopincan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Services</a>
+                    <ul class="dropdown">
+                        <li><a href="./website-development.html">Website Development</a></li>
+                        <li><a href="./Software-development-services.html">Software Development</a></li>
+                        <li><a href="./Cloud-services.html">Cloud-automation-solutions</a></li>
+                        <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Pricing2.html">Pricing</a></li>
+
+                <li><a href="./Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero content main section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h1 style="text-align:left; color: #fff; font-size: 30px;">Our Products AI Digital Solutions</h1>
+                    <p>InnoAI Solutions – Emphasizing innovative AI solutions.</p>
+                    <!-- <h1 style="text-align:left;"><b style="color: #fff; font-size: 70px;">Startup</b></h1> -->
+                    <!-- <a href="#" class="cta-button">Request For DEMO</a> -->
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-image">
+                    <img src="./assets/images/Company-amico 1.png" alt="Educational Digital Solutions" />
+                </div>
+            </div>
+        </section>
+
+        <!-- our products section -->
+        <section class="product-section" id="products-section">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-container">
+
+                <a href="./Solution1.html"> <div class="product-item">
+                    <img src="./assets/images/ourproducts/image.png" alt="School" class="product-image">
+                    <p class="product-name">Campus90</p>
+                    <p style="text-align: left; text-decoration: none; color: rgb(36, 33, 33);">Campus90 is a comprehensive ERP solution designed
+                        specifically for institutions.It streamlines campus operations by integrating all
+                        administrative into a unified platform.</p>
+                </div></a>
+                <a href="./fee.html"> <div class="product-item">
+                    <img src="./assets/images/ourproducts/image (1).png" alt="College" class="product-image">
+                    <p class="product-name">CampusUniPay</p>
+                    <p style="text-align: left; text-decoration: none; color: rgb(36, 33, 33);">CampusUniPay is an advanced fee collection solution tailored for
+                        educational institutions to
+                        simplify and manage the fee payment process efficiently.
+                    </p>
+                </div></a>
+                <a href="./logistic.html"><div class="product-item">
+                    <img src="./assets/images/ourproducts/image (2).png" alt="E-Commerce" class="product-image">
+                    <p class="product-name">TranSend Logistic</p>
+                    <p style="text-align: left; text-decoration: none; color: rgb(36, 33, 33);">TranSend Logistic Solutions is an innovative logistics company designed
+                        to optimize and enhance
+                        the entire supply chain process through advanced technology management.</p>
+                      
+                </div> </a>
+                <a
+                href="./ecommerce.html"> <div class="product-item">
+                    <img src="./assets/images/ourproducts/image (2).png" alt="Bank" class="product-image">
+                    <p class="product-name">Shopincan</p>
+                    <p style="text-align: left; text-decoration: none; color: rgb(36, 33, 33);">Shopincan eCommerce is a robust online retail platform tailored for
+                        Canadian businesses focusing on seamless shopping experiences order management.</p>
+                      
+                </div>  </a>
+            </div>
+            <br>
+            <!-- <button class="view-more-btn" id="view-more-btn">View More Products</button> -->
+        </section>
+
+
+        <!-- our services section -->
+
+        <section class="services-section" id="service-section">
+            <h3>Our Services</h3>
+            <!-- <h2 class="services-section-title">Let's Check Our Services</h2> -->
+            <br>
+            <div class="services-container">
+                <a href="./website-development.html">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/website.png" alt="Website Development Icon">
+                        </div>
+                        <h3>Website Development</h3>
+                        <p>We specialize in crafting modern, user-friendly websites that drive results.</p>
+                        <br>
+                        
+                    </div>
+                </a>
+
+                <!-- <a href="./Ecommerce-service.html">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/ecommerce.png" alt="Ecommerce Marketing Icon">
+                        </div>
+                        <h3>Ecommerce Marketing</h3>
+                        <p>Maximize your sales potential with our data-driven ecommerce marketing solutions.</p>
+                    </div>
+                </a> -->
+
+                <!-- <a href="./Banking-service.html">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/banking.png" alt="Banking Icon">
+                        </div>
+                        <h3>Banking</h3>
+                        <p>Maximize your business potential with our secure and reliable banking solutions.</p>
+                    </div>
+                </a> -->
+
+                <a href="./Software-development-services.html">
+                    <div class="service-card" style="padding-bottom: 5px;">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/software development.png"
+                                alt="Software Development Icon">
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>We are dedicated to transforming ideas into powerful software solutions that drive innovation
+                            and success.</p>
+                            <br>
+                    </div>
+                </a>
+
+                <a href="./Cloud-services.html">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/cloud solutions.png" alt="Cloud Solutions Icon">
+                        </div>
+                        <h3>Cloud Automation Solutions</h3>
+                        <p>We specialize in delivering cutting-edge cloud automation solutions that simplify and
+                            accelerate your digital transformation journey. </p>
+                    </div>
+                </a>
+
+                <a href="./Openshift-Installation-services.html">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="./assets/icons/ourservices/openshift.png" alt="OpenShift Installation Icon">
+                        </div>
+                        <h3>OpenShift training and services</h3>
+                        <p>We are dedicated to empowering businesses and professionals with expertise in Red Hat
+                            OpenShift, the leading container platform for Kubernetes.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 360 degree digital service expertise section -->
+
+        <section class="container-360-degree ">
+            <div class="container-360">
+                <div class="main-section">
+                    <h2>360° OF DIGITAL SERVICES EXPERTISE</h2>
+                    <p>
+                        We offer a comprehensive suite of digital services designed to help businesses thrive in today’s
+                        fast-evolving digital landscape. Our expertise spans every aspect of digital transformation,
+                        ensuring you have the tools, strategies, and solutions to achieve success from every angle.</p>
+                    <p>
+                    <h3>Our Expertise Includes:</h3>
+                    <ul>
+                        <li>
+                            <h4> Web Development:</h4>
+
+                            Custom websites and applications tailored to your brand and business needs.
+                        </li>
+                       
+                        <li>
+                            <h4> Mobile App Development:</h4>
+                            User-centric, high-performance mobile apps for iOS and Android platforms.
+                        </li>
+                        <li>
+                            <h4>Cloud Solutions:</h4>
+
+                            Scalable, secure cloud migration, automation, and management services.
+                        </li>
+                        <li>
+                            <h4> Digital Marketing:</h4>
+
+                            SEO, PPC, social media marketing, and content strategies to boost your online presence.
+                        </li>
+                        <li>
+                            <h4> eCommerce Solutions:</h4>
+
+                            End-to-end platforms for seamless online selling and customer engagement.
+                        </li>
+                        <li>
+                            <h4>UI/UX Design:</h4>
+
+                            Intuitive, engaging designs that enhance user experience across all digital platforms.
+                        </li>
+                        <li>
+                            <h4>DevOps & Automation:</h4>
+
+                            Streamline processes and accelerate software delivery with our DevOps solutions.
+                        </li>
+                        <li>
+                            <h4>AI & Data Analytics:</h4>
+
+                            Leverage AI and advanced analytics to make smarter, data-driven decisions.</p>
+                        </li>
+                        <!-- <a href="#" class="btn">Know More</a> -->
+                    </ul>
+
+                </div>
+                <div class="info-section">
+                    <div class="info-box " style="background-color:  #e3f2fd;">
+                        <div class="service-icon" style="background-color:  #e3f2fd;">
+                            <img src="./assets/icons/360-degree-container/client-delight.png"
+                                alt="Software Development Icon">
+                        </div>
+                        <h3>Holistic Approach:</h3>
+                        <p>From strategy and development to deployment and support, we cover it all.
+                        </p>
+                    </div>
+                    <div class="info-box " style="background-color: #fff3e0;">
+                        <div class="service-icon" style="background-color: #fff3e0;">
+                            <img src="./assets/icons/360-degree-container/strategic-planning.png"
+                                alt="Software Development Icon">
+                        </div>
+                        <h3>Cutting-Edge Technology</h3>
+                        <p>We stay ahead of the curve to bring you the latest innovations.</p>
+                    </div>
+                    <div class="info-box " style="background-color: #eaffe0;">
+                        <div class="service-icon" style="background-color: #eaffe0;">
+                            <img src="./assets/icons/360-degree-container/tailored-solutions.png"
+                                alt="Software Development Icon">
+                        </div>
+                        <h3>Tailored Solutions</h3>
+                        <p>Every service is customized to meet your unique business goals..</p>
+                    </div>
+                    <div class="info-box " style="background-color: #e0e7ff;">
+                        <div class="service-icon" style="background-color: #e0e7ff;">
+                            <img src="./assets/icons/360-degree-container/timely-complete.png"
+                                alt="Software Development Icon">
+                        </div>
+                        <h3>Experienced Professionals</h3>
+                        <p>A team of experts dedicated to delivering excellence.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-address">
+                <div class="address-card">
+                    <h2><b>India-Registered office</b></h2>
+                    <p>V.O.C. Street,Perungudi,OMR, Chennai, Tamil Nadu ,
+                        India, 600041</p>
+                    <p>support@azesavant.com <br>Tel: (+91) 9499044493</p>
+                </div>
+                <div class="address-card">
+                    <h2><b>India-Development Center</b></h2>
+                    <p>51, 4th floor,Ratha Tek Meadows Rd, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119 </p>
+                    <p>support@azesavant.com <br> Tel: (+91) 9445122271</p>
+                </div>
+                <div class="address-card">
+                    <h2><b>Canada-International Offices </b></h2>
+                    <p>7878 french street, Vancouver, v6p4v7<br> BC ,Canada</p>
+                    <p>support.canada@azesavant.com <br> Tel: +1(604)8372369</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <!-- <br> -->
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">About Us</h2>
+                <p>
+                    Azesavant Software Solutions, nestled in the vibrant tech hub of Chennai, India, has emerged as a
+                    prominent player in the domain of educational,Payment solutions,Transport and logistic AI technology
+                    cloud Solutions.
+                </p>
+
+
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Products</h2>
+                <ul>
+                    <li><a href="./Solution1.html">Campus90</a></li>
+                    <li><a href="./fee.html">CampusUniPay</a></li>
+                    <li><a href="./logistic.html">TranSend Logistic</a></li>
+                    <li><a href="./ecommerce.html">Shopincan</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Services</h2>
+                <ul>
+                    <li><a href="./website-development.html">Website Development</a></li>
+                    <li><a href="./Software-development-services.html">Software Development</a></li>
+                    <li><a href="./Cloud-services.html"> Cloud Automation Solutions</a></li>
+                    <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Contact</h2>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044492</p>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044493</p>
+                <p><i class="fas fa-envelope"></i>   info@azesavant.com</p>
+                <p> <i class="fas fa-envelope"></i>    support@azesavant.com</p>
+                <p><i class="fas fa-clock"></i> <b>    (8:00AM – 6:00PM)</b> </p>
+                <p> Monday to Saturday</p>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Partners</h2>
+                <img src="./assets/images/footer/image 1.png">
+                <img src="./assets/images/footer/image 2.png">
+                <img src="./assets/images/footer/image 3.png">
+
+            </div>
+            <!-- <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>2018-2024 Azesavant Software Solutions Pvt Ltd All Rights Reserved<a href="./Terms.html">Terms and
+                    Conditions</a> <a href="./Privacy.html">Privacy Policy</a>
+                <a href="./Refund.html">Refund Policy</a>
+                <a href="./Cookies.html">Cookies Policy</a>
+               
+                    <a  class="social-icons" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a   class="social-icons" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a   class="social-icons" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a> -->
+                
+            </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+
+        // Load the header
+        fetch('Header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Header not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load the footer
+        fetch('Footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Footer not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html"> <div class="logo">
+                <img src="./assets/logos/azesvent logo.png" alt="Azesavant Logo">
+            </div></a>
+            <!-- Hamburger menu (visible on small screens) -->
+            <div class="hamburger" id="hamburger">
+
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <button class="close-btn" id="close-btn" onclick="closeNav()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#"> Products</a>
+                    <ul class="dropdown">
+                        <li><a href="./Solution1.html">Campus90</a></li>
+                        <li><a href="./fee.html">CampusUniPay</a></li>
+                        <li><a href="./logistic.html">Transend Logistic</a></li>
+                        <li><a href="./ecommerce.html">Shopincan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Services</a>
+                    <ul class="dropdown">
+                        <li><a href="./website-development.html">Website Development</a></li>
+                        <li><a href="./Software-development-services.html">Software Development</a></li>
+                        <li><a href="./Cloud-services.html">Cloud-automation-solutions</a></li>
+                        <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Pricing2.html">Pricing</a></li>
+
+                <li><a href="./Contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-sections">
+        <h1>Contact Us for support</h1>
+        <div class="contact-containar">
+            <div class="contact-box">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3> India - Chennai Offices</h3>
+                <p>4/608, V.O.C. Street, Perungudi, OMR, Chennai.</p>
+                <p>51, 4th floor, Ratha Tek Meadows Rd, Elcot Sez, Sholinganallur, Chennai, Tamil Nadu 600119</p>
+            </div>
+            <div class="contact-box">
+                <div class="icon">
+                    <!-- <i class="fas fa-clock"></i> -->
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Canada - International Offices</h3>
+                <p>7878 french street, Vancouver, v6p4v7 <br> BC ,Canada</p>
+                    <p>support.canada@azesavant.com <br> Tel: +1(604)8372369</p>
+            </div>
+            <div class="contact-box">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Contact Us:</h3>
+                <p>Email: Support@azesavant.com</p>
+                <p>Phone: (+91) 9445122227</p>
+				<p>Phone: (+91) 9499044493</p>
+                <i class="fas fa-clock"></i>
+                <h3>Working Hours:</h3>
+                <p>Mon - Sat : 8:00am - 06:00pm</p>
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+    <img src="./assets/images/Group 27.png" alt="map" style="width: 100%; object-fit: contain;">
+
+
+    <br>
+    <br>
+
+    <section class="contact-us">
+        <div class="contact-container">
+            <div class="contact-left">
+                <img src="./assets/images/Calling-amico 1.png" alt="Contact Illustration" class="contact-image">
+            </div>
+            <div class="contact-right">
+                <h2 style="color: rgb(48, 59, 119);">We'd love to hear from you</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your name here" required>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label for="email">Your Email <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Your email here" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Your Subject <span>*</span></label>
+                        <input type="text" id="subject" name="subject" placeholder="Your subject here" required>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone here">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message here"></textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="captcha">Type the below word</label>
+                        <input type="text" id="captcha" name="captcha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="captcha">Type the word: <strong id="captcha-text"></strong></label>
+                        <input type="text" id="captcha" name="captcha" required placeholder="Type captcha here">
+                    </div> -->
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <!-- <br> -->
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">About Us</h2>
+                <p>
+                    Azesavant Software Solutions, nestled in the vibrant tech hub of Chennai, India, has emerged as a
+                    prominent player in the domain of educational,Payment solutions,Transport and logistic AI technology
+                    cloud Solutions.
+                </p>
+
+
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Products</h2>
+                <ul>
+                    <li><a href="./Solution1.html">Campus90</a></li>
+                    <li><a href="./fee.html">CampusUniPay</a></li>
+                    <li><a href="./logistic.html">TranSend Logistic</a></li>
+                    <li><a href="./ecommerce.html">Shopincan</a></li>
+                </ul>
+
+
+            </div>
+
+
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Services</h2>
+                <ul>
+                    <li><a href="./website-development.html">Website Development</a></li>
+                    <li><a href="./Software-development-services.html">Software Development</a></li>
+                    <li><a href="./Cloud-services.html"> Cloud Automation Solutions</a></li>
+                    <li><a href="./Openshift-Installation-services.html">OpenShift training and services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Contact</h2>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044492</p>
+                <p><i class="fas fa-phone-alt"></i> (+91) 9499044493</p>
+                <p><i class="fas fa-envelope"></i>   info@azesavant.com</p>
+                <p> <i class="fas fa-envelope"></i>    support@azesavant.com</p>
+                <p><i class="fas fa-clock"></i> <b>    (8:00AM – 6:00PM)</b> </p>
+                <p> Monday to Saturday</p>
+            </div>
+
+            <div class="footer-section">
+                <h2 style="color: rgb(255, 255, 255);">Our Partners</h2>
+                <img src="./assets/images/footer/image 1.png">
+                <img src="./assets/images/footer/image 2.png">
+                <img src="./assets/images/footer/image 3.png">
+
+            </div>
+            <!-- <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div> -->
+        </div>
+
+        <div class="footer-bottom">
+            <p>2018-2024 Azesavant Software Solutions Pvt Ltd All Rights Reserved<a href="./Terms.html">Terms and
+                    Conditions</a> <a href="./Privacy.html">Privacy Policy</a>
+                <a href="./Refund.html">Refund Policy</a>
+                <a href="./Cookies.html">Cookies Policy</a>
+               
+                    <a  class="social-icons" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a   class="social-icons" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a   class="social-icons" href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a> -->
+                
+            </p>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        const captchaText = document.getElementById("captcha-text");
+        const generateCaptcha = () => {
+            const randomWord = Math.random().toString(36).substring(2, 8); // Generates random 6-char word
+            captchaText.innerText = randomWord;
+        }
+        generateCaptcha(); // Call function to show captcha text
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            const userCaptcha = document.getElementById("captcha").value;
+            const generatedCaptcha = captchaText.innerText;
+            // Check if user input matches generated CAPTCHA
+            if (userCaptcha !== captchaText.innerText) {
+                alert("Captcha is incorrect");
+                event.preventDefault(); // Prevent form submission if captcha doesn't match
+                generateCaptcha(); // Generate new captcha
+            }
+        });
+    </script>
+
+
+    <script>
+
+
+        // Load the header
+        fetch('Header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Header not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load the footer
+        fetch('Footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Footer not found');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    <script src="index.js" defer></script>
+
+</body>
+
+</html>
