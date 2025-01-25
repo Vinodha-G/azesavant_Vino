@@ -14,7 +14,13 @@ body {
 header {
   background-color: white;
   /* padding: 10px 0; */
-  position:static;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
 }
 
 .navbar {
@@ -81,6 +87,38 @@ header {
   display: block;
 }
 
+@media (max-width: 1200px) and (min-width: 750px) {
+  .navbar {
+      padding: 0 10px; /* Reduce horizontal padding */
+      border-top: 15px solid #2e65f3; /* Adjust border width if needed */
+      border-bottom: 5px solid #2e65f3;
+  }
+
+  .navbar a {
+      font-size: 16px; /* Adjust link font size if needed */
+  }
+
+  .logo img {
+      max-width: 170px; /* Scale logo to fit better */
+  }
+}
+@media (max-width: 900px) and (min-width: 750px) {
+  
+
+  .navbar a {
+      font-size: 15px; /* Adjust link font size if needed */
+  }
+  
+  
+
+  
+}
+@media (max-width:850px) and (min-width:750px) {
+  .logo img {
+    max-width: 120px; /* Scale logo to fit better */
+}
+  
+}
 /* Hamburger Menu for small screens */
 .hamburger {
   display: none;
@@ -690,7 +728,7 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .container {
+  .container-360 {
     flex-direction: column;
   }
 
@@ -700,17 +738,23 @@ body {
   }
 
   .info-section {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     /* Single column on smaller screens */
-    margin-left: 17%;
+   
   }
 
   .info-box {
-    padding: 50px;
+    padding: 20px;
+  }
+}
+@media (max-width:650px) and (min-width:480px){
+  .info-section{
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-width:200px){
   .main-section h1 {
     font-size: 1.75rem;
   }
@@ -720,10 +764,13 @@ body {
   }
 
   .info-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
     /* Single column on smaller screens */
-    margin-left: 17%;
-    margin-right: 10%;
+  
+  }
+  .info-box{
+    padding: 10px;
   }
 
   .info-box h3 {
@@ -734,6 +781,12 @@ body {
     font-size: 0.875rem;
   }
 }
+@media (max-width:950px) and (min-width:750px){
+  .info-section{
+    grid-template-columns: 1fr;
+  }
+}
+
 /*adress-card-container*/
 
 .container-address {
